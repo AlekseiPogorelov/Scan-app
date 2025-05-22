@@ -1,0 +1,67 @@
+.footer {
+  background: #029491;
+  padding: 1px 0 1px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logoWrap {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  height: 104px;
+  width: auto;
+  display: block;
+}
+
+.addressBlock {
+  text-align: right;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.address {
+  font-size: 13px;
+  line-height: 1.3;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 6px;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+  .logoWrap, .addressBlock {
+    align-items: center;
+    text-align: center;
+  }
+  .logo {
+    height: 44px;
+  }
+}

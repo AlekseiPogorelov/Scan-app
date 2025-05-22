@@ -1,0 +1,93 @@
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 18px;
+  margin-bottom: 100px;
+}
+.foundCount {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #949494;
+  margin-bottom: 16px;
+  margin-left: 0px;
+}
+.arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #029491;
+  cursor: pointer;
+  transition: color 0.2s;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+}
+.arrow:disabled {
+  color: #e6e6e6;
+  cursor: default;
+}
+.carousel {
+  flex: 1 1 auto;
+  overflow-x: auto;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 900px;
+  background: #fff;
+  border: 2px solid #029491;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.table th,
+.table td {
+  border-bottom: none !important;
+  border-top: none !important;
+  border-right: 1px solid #E6E6E6;
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.table th:first-child,
+.table td:first-child {
+  background: #029491;
+  color: #fff;
+  border-right: 1px solid #fff;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.table th:not(:first-child),
+.table td:not(:first-child) {
+  color: #000;
+  background: #fff;
+}
+
+.table tr:not(:last-child) td,
+.table tr:not(:last-child) th {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.table th {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.table tr {
+  background: #fff;
+}
+
+@media (max-width: 1200px) {
+  .table {
+    min-width: 700px;
+  }
+}

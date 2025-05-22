@@ -1,0 +1,149 @@
+.tariffCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+  max-width: 370px;
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px 0 #00000014;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 28px 18px 28px;
+  background: var(--tariff-color);
+  min-height: 120px;
+  position: relative;
+}
+.headerBusiness {
+  background: #000 !important;
+}
+.cardTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+  letter-spacing: -1px;
+}
+.cardDesc {
+  font-size: 12px;
+  color: #222;
+  margin: 4px 0 0 0;
+  font-weight: 400;
+}
+.whiteText {
+  color: #fff !important;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  margin-left: 12px;
+  margin-top: -8px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 28px;
+}
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+.oldPrice {
+  font-size: 20px;
+  color: #B3B3B3;
+  text-decoration: line-through;
+}
+.badge {
+  background: #3BA5E0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 4px 12px;
+  position: absolute;
+  right: 0;
+  top: -28px;
+}
+.monthly {
+  color: #222;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.flexGrow {
+  flex-grow: 1;
+}
+.featuresBlock {
+  margin-bottom: 0;
+}
+.featuresTitle {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+.features li {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check {
+  width: 18px;
+  height: 18px;
+}
+.moreBtn {
+  width: 100%;
+  background: #5970FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.moreBtn:hover {
+  background: #4252c5;
+}
+.cabinetBtn {
+  width: 100%;
+  background: #D2D2D2;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: not-allowed;
+  margin-top: 10px;
+}
+
+.current {
+  border-color: var(--tariff-color, #FFB64F);
+}

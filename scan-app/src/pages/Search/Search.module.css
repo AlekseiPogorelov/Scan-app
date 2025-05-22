@@ -1,0 +1,293 @@
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px 0 20px;
+}
+
+.searchContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 36px 36px 36px;
+  min-height: 380px;
+  margin-bottom: 60px;
+  position: relative;
+  gap: 48px;
+}
+
+.searchLeft {
+  flex: 2 1 0;
+  min-width: 340px;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchRight {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+  padding-top: 0px;
+}
+
+.form {
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 2;
+  box-shadow: 0 8px 32px 0 rgba(04, 02, 10, 0.12);
+  border-radius: 18px;
+  border: 30px solid #fff;
+  background: #fff;
+}
+
+.formGrid {
+  display: flex;
+  gap: 40px;
+}
+
+.leftFields, .rightFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.label {
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input {
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 2px;
+  transition: border-color 0.2s;
+}
+
+.inputError {
+  border-color: #FF5959 !important;
+}
+
+.datesRow {
+  display: flex;
+  gap: 16px;
+}
+
+.checkbox {
+  font-size: 14px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.error {
+  color: #FF5959;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.submitBtn {
+  margin-top: 32px;
+  width: 240px;
+  align-self: flex-start;
+  background: #5970FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitBtn:disabled {
+  background: #d2d2d2;
+  cursor: not-allowed;
+}
+
+/* SVG-иллюстрации */
+.rocketSvg {
+  width: 350px;
+  height: auto;
+  margin-top: 100px;
+  margin-right: -200px;
+}
+.folderSvg {
+  width: 120px;
+  height: auto;
+  margin-top: -50px;
+  margin-right: -150px;
+}
+.fileSvg {
+  width: 100px;
+  height: auto;
+  margin-top: 68px;
+  margin-right: 150px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 32px;
+}
+.requiredNote {
+  font-size: 10px;
+  color: #949494;
+  margin-top: 0px;
+  margin-left: 85px;
+  font-style: italic;
+  user-select: none;
+}
+
+.mobileIllustration {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .main {
+    max-width: 100vw;
+    padding: 0 0 0 0;
+  }
+
+  .searchContent {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 0 0 0;
+    gap: 0;
+    border-radius: 0;
+    min-height: unset;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
+
+  .searchLeft {
+    max-width: 100vw;
+    min-width: 0;
+    padding: 0 8px;
+  }
+
+  .searchRight {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    gap: 16px;
+  }
+
+  .formGrid {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .leftFields, .rightFields {
+    gap: 8px;
+    padding: 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    gap: 2px;
+  }
+
+  .input {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+
+  .datesRow {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    margin-top: 12px;
+    border-radius: 7px;
+  }
+
+  .requiredNote {
+    margin-left: 0;
+    font-size: 11px;
+    margin-top: 6px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .mobileIllustration {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 24px 0 16px 0;
+    width: 100%;
+  }
+  .rocketSvgMobile {
+    width: 280px;
+    max-width: 90vw;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0 0 0 0;
+  }
+  .searchLeft {
+    padding: 0 4px;
+  }
+  .form {
+    gap: 10px;
+  }
+  .label {
+    font-size: 13px;
+  }
+  .input {
+    font-size: 14px;
+    padding: 8px 6px;
+  }
+  .submitBtn {
+    font-size: 15px;
+    padding: 12px 0;
+    border-radius: 6px;
+  }
+}
